@@ -12,6 +12,9 @@
   <link href="../css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
   <link href="../css/mdb.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+
+  <script type="text/javascript" href="script.js" defer ></script>
  
 </head>
 
@@ -80,10 +83,40 @@
                 <hr class="hr-dark">
                 <h4 class="mb-5 clearfix d-none d-md-inline-block"> Deleniti consequuntur, nihil voluptatem modi nobis veniam.</h4>
               </div>
-              <a class="btn btn-deep-orange btn-rounded wow fadeInUp" data-wow-delay="0.2s">
-                <i class="far fa-calendar-alt mr-2"></i>
-                <span> Make a reservation</span>
-              </a>
+              <!-- <a class="btn btn-deep-orange btn-rounded wow fadeInUp" data-wow-delay="0.2s"> -->
+                <!-- <i class="far fa-calendar-alt mr-2"></i>
+                <span> Make a reservation</span> -->
+
+              <!-- Adding a Modal -->
+              
+              <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                  Launch demo modal
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              <!-- </a> -->
             </div>
           </div>
         </div>
