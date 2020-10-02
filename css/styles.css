@@ -5,3 +5,10 @@
       height: 100%;
       min-height: 100%;
     }
+
+
+  .modal-backdrop {
+      position: relative;
+      z-index: 1;
+     
+  }
