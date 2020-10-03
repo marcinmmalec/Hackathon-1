@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Vendome Cafe</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="./css/mdb.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+    
+  <script type="text/javascript" src="./js/script.js" defer ></script>
+ 
+ 
+</head>
+
+<body class="restaurant-lp">
+    <!-- Header Section -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+      Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div style="z-index:2;" class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Pick Up Order</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Last name">
+                </div>
+              </div>
+                <div id="orderFormGroup" class="form-group" style="margin-top: 5px; display:block;">
+                    <label for="formGroupExampleInput">Order</label>
+                    <div id="orderItems" class="form-row">
+                        <div class="col-6">
+                            <select class="custom-select">
+                              <option selected>Please Select A Item</option>
+                              <option value="1">Hummus - $5</option>
+                              <option value="2">Roasted Alberta Carrots - $13</option>
+                              <option value="3">Vendome Sausage Roll - $11</option>
+                              <option value="4">Smoked Salmon Potato Donuts - $13</option>
+                              <option value="5">Avocado Toast - $15</option>
+                            </select>
+                        </div>
+                        <div class="col-2">
+                            <input type="number" class="form-control" id="quantity1">
+                        </div>
+                    </div>
+                    <button id="addButton" type="button" class="btn btn-primary btn-sm" onclick="addRow()">+</button>
+                </div>
+                <div class="md-form md-outline" twelvehour="true" min="9:15AM" max="8:30PM">
+                  <input type="time" id="default-picker" class="form-control">
+                  <label for="default-picker">Choose your pick-up time</label>
+                </div>               
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SCRIPTS -->
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="./js/jquery-3.4.0.min.js"></script>
+
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="./js/popper.min.js"></script>
+
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="./js/mdb.min.js"></script>
+
+
+</body>
