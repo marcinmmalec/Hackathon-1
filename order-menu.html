@@ -21,13 +21,30 @@
 
 <body class="restaurant-lp">
     <!-- Header Section -->
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#orderModal">
-      Order Now
-    </button>
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">Open Modal</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal-m">
+
+      <!-- Modal content -->
+      <div class="modal-content-m">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+      </div>
+
+    </div>
+    
+    
+    
+    <div style="text-align:center;">    
+        <button id="orderBtn" type="button" class="btn btn-deep-orange btn-rounded wow fadeInUp waves-effect waves-light center" data-toggle="modal" data-target="#orderModal">
+          Order Now
+        </button>
+      </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-m fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div style="z-index:2;" class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
